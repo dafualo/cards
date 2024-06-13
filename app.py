@@ -5,7 +5,7 @@ from io import BytesIO
 response = r.get('https://www.deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
 #print(response.status_code)
 deck = response.json()
-print(deck)
+#print(deck)
 deck_id = deck['deck_id']
 
 response = r.get(f'https://www.deckofcardsapi.com/api/deck/{deck_id}/draw/?count=1')
